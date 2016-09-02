@@ -30,7 +30,6 @@ public class DailyLifeMagazine
         int[] gender= new int[numDatos];
         int[] maritalStatus=new int[numDatos];
         int[] annualIncome = new int [numDatos];
-        boolean ingresaMas = true;
         for (int i=0; i<numDatos;i++)
         {
             
@@ -43,7 +42,7 @@ public class DailyLifeMagazine
             System.out.println("Ingrese salario anual");
             annualIncome[i]=sn.nextInt();
         }
-        System.out.println("Escoga un filtro: 1.Edad 2.Género 3.Edad y Género 4. Salario");
+        System.out.println("Escoja un filtro: 1.Edad 2.Género 3.Edad y Género 4. Salario");
         int filter = sn.nextInt();
         switch (filter) {
             case 1:
